@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Com amor para Hilton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-texture"></div>
+
+  <main id="app">
+    <section id="cover" class="screen cover-screen active">
+      <div class="envelope">
+        <div class="wax">♡</div>
+        <p class="small">Uma carta para</p>
+        <h1>Hilton</h1>
+        <p class="subtitle">Com amor para Hilton.</p>
+        <p class="before">Antes de mais nada...</p>
+        <button class="heart-button" onclick="startLetter()">♡ Abrir a carta ♡</button>
+      </div>
+    </section>
+
+    <section id="letter" class="screen hidden">
+      <div class="letter">
+        <div class="ornament">❦</div>
+        <div id="pageNumber"></div>
+        <div id="content"></div>
+        <div class="controls">
+          <button id="backBtn" onclick="previousPage()">♡ Voltar</button>
+          <button id="nextBtn" onclick="nextPage()">Continuar a ler ♡</button>
+        </div>
+        <button class="restart" onclick="restart()">↻ Recomeçar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
